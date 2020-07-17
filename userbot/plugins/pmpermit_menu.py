@@ -28,20 +28,20 @@ async def _(event):
             return
         if event.is_private:
          
-         PM = ("`Hello. You are accessing the availabe menu of my peru master,`"
+         PM = ("`Hey. You Are Accessing The Availabe Menu of HappyBoy's,`"
                f"{DEFAULTUSER}.\n"
                "__Let's make this smooth and let me know why you are here ! So Select A Reason And Send it's Number__\n"
                "**Choose one of the following reasons why you are here:**\n\n"
-               "`1`. To chat with my master\n"
-               "`2`. To Spam my master's Inbox.\n"
+               "`1`. To Chat with HappyBoy\n"
+               "`2`. To Spam @HappyBoy's Inbox.\n"
 
-               "`3`. To enquire something\n"
-               "`4`. To request something\n")
-         ONE = ("`I Have Registered Your Request ! Don't Worry My Master Will Be Here Soon To Chat With You !` \n\n")
-         TWO = ("`Please Don't Spam My Master Inbox ! You Have Been Reported Until Further Notice !`")
-         FOUR = ("`Okay ! I See You Can Request Your Demands ! Please Wait Untill My Master Approves You` !")
-         FIVE = ("`Okay. please have the basic manners as to not bother my master too much. If he wishes to help you, he will respond to you soon.`\n**Kindly Do not ask repeatdly else you will be blocked and reported.**")
-         LWARN = ("**This is your last warning. DO NOT send another message else you will be blocked and reported. Keep patience. My master will respond you ASAP.**\n__Use__ `/start` __to go back to the main menu.__")
+               "`3`. To Enquire something\n"
+               "`4`. To Request something\n")
+         ONE = ("`I Have Registered Your Request ! Don't Worry He Will Be Here Soon To Chat With You !` \n\n")
+         TWO = ("`Please Don't Spam Inbox ! You Have Been Reported Until Further Notice !`")
+         FOUR = ("`Okay ! I See You Can Request Your Demands ! Please Wait Untill He Approves You` !")
+         FIVE = ("`Okay. Please Have The Basic manners, He will Respond You Soon.`\n**Kindly Do Not Ask Repeatdly Else You Will Be Blocked And Reported.**")
+         LWARN = ("**This Is Our Last Warning. DO NOT Send Another Message Else You Will Be Blocked And Reported.")
      
         async with borg.conversation(chat) as conv:
          await borg.send_message(chat, PM)
@@ -96,7 +96,7 @@ async def _(event):
                      await asyncio.sleep(3)
                      await event.client(functions.contacts.BlockRequest(chat_id))
          else:
-             await borg.send_message(chat, "`You have entered an invalid command. Please send /start again or do not send another message if you do not wish to be blocked and reported.`")
+             await borg.send_message(chat, "`🤦🏻‍♂️ Send /start If You Send Else You Will Blocked And Reported.`")
              response = await conv.get_response(chat)
              z = response.text
              if not z == "/start":
