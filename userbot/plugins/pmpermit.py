@@ -19,12 +19,12 @@ PREV_REPLY_MESSAGE = {}
 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
-CUSTOM_MIDDLE_PMP = str(CUSTOM_PMPERMIT) if CUSTOM_PMPERMIT else "**If You Want You Can Leave A Message Here ! Happy Boy Will Surely See And Reply To You Soon !**"
-USER_BOT_WARN_ZERO = "`You Were spamming @Happyboy59 's inbox.` "
-USER_BOT_NO_WARN = ("`Hello My Friend ! \n"
+CUSTOM_MIDDLE_PMP = str(CUSTOM_PMPERMIT) if CUSTOM_PMPERMIT else "**Hi Stranger HappyBoy Is So Busy😝**"
+USER_BOT_WARN_ZERO = "`You Were Spamming @Happyboy59 's inbox.` "
+USER_BOT_NO_WARN = ("`Hey Again U 😳! \n"
                     f"{DEFAULTUSER} is Busy ! Please Don't Spam Inbox\n\n"
                     f"{CUSTOM_MIDDLE_PMP} \n\n"
-                    "**Kindly Send** `/start` **If You Want To Register Your Request**")
+                    "**Kindly Send** /start **If You Want To Register Your Request**")
 
 
 if Var.PRIVATE_GROUP_ID is not None:
